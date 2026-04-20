@@ -6,7 +6,7 @@ and HIMU) from MORB and OIB trace-element data.
 
 ## Files
 
-- `run_pipeline.py`  
+- `AutoML_pipeline.py`  
   Single end-to-end script that:
   1. Loads the processed training and test data from `../data/`
   2. Runs H2O AutoML with the settings used in the manuscript
@@ -18,7 +18,7 @@ and HIMU) from MORB and OIB trace-element data.
   See the comments inside `run_pipeline.py` for detailed descriptions of
   each processing and modeling step.
 
-- `mantle_classifier.py`  
+- `classifier.py`  
   Command-line tool that uses the trained H2O AutoML model exported in
   the paper to classify new MORB/OIB samples. It supports:
     - Batch classification from a CSV file with the six required
