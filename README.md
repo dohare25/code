@@ -12,8 +12,11 @@ and HIMU) from MORB and OIB trace-element data.
   2. Runs H2O AutoML with the settings used in the manuscript
   3. Evaluates the final model and exports predictions/metrics
 
-See the comments inside `run_pipeline.py` for detailed descriptions of
-each processing and modeling step.
+  The script run_pipeline.py expects the processed training dataset at ../data/training_data.csv and writes outputs to ../outputs/. These paths are defined
+  relative to the script and should work unchanged after cloning the repository.
+
+  See the comments inside `run_pipeline.py` for detailed descriptions of
+  each processing and modeling step.
 
 - `mantle_classifier.py`  
   Command-line tool that uses the trained H2O AutoML model exported in
