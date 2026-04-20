@@ -23,18 +23,18 @@ NUMERIC_COLS = ["U/Pb", "Nb", "Th/U", "La", "Rb", "Ba"]
 TARGET = "Reservoir"
 
 HOLDOUT_LOCATIONS = [
-    {"location": "PrattWelker",  "reservoir": "DM"},
+    {"location": "PrattWelker",  "reservoir": "DM"},  # This is the "NE Pacific" location in the paper
     {"location": "IndianMOR",    "reservoir": "DM"},
     {"location": "Macquarie",    "reservoir": "DM"},
     {"location": "Shatsky",      "reservoir": "DM"},
     {"location": "SWPacific",    "reservoir": "EM1"},
-    {"location": "Idaho",        "reservoir": "EM1"},
-    {"location": "Indian2",      "reservoir": "EM1"},
+    {"location": "Idaho",        "reservoir": "EM1"}, # This is the "Indian Ridge" location 
+    {"location": "Indian2",      "reservoir": "EM1"}, 
     {"location": "EastAsia",     "reservoir": "EM1"},
     {"location": "WestPac",      "reservoir": "EM1"},
     {"location": "30W",          "reservoir": "EM2"},
     {"location": "RedSea",       "reservoir": "EM2"},
-    {"location": "Marquesas",    "reservoir": "EM2", "external_file": os.path.join(script_dir, "..", "data", "EM2_test_Marquesas.csv"),},
+    {"location": "Marquesas",    "reservoir": "EM2", "external_file": os.path.join(script_dir, "..", "data", "EM2_test_Marquesas.csv"),}, # This test location was downloaded from data outside of the training data
     {"location": "64E",          "reservoir": "HIMU"},
     {"location": "Ant",          "reservoir": "HIMU"},
     {"location": "100W",         "reservoir": "HIMU"},
